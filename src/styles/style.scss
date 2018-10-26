@@ -1,0 +1,58 @@
+@import "import";
+input {
+  outline: none;
+  background: transparent;
+  border: none;
+  outline: medium;
+}
+
+*:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+::selection {
+  background: transparent;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+::-moz-selection {
+  background: transparent;
+}
+
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  color: #fff;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.resetIndex {
+  min-height: 100vh;
+  background: rgba(248, 248, 248, 1);
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  height: 85px;
+  line-height: 42px;
+  font-size: 24px; /*px*/
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  word-wrap: break-word
+}
+.picker-items{
+  width: 100%;
+}
+
+.picker-item.picker-selected{
+  color: #26a2ff;
+}
