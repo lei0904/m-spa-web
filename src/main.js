@@ -12,22 +12,20 @@ import Vue from 'vue'
 
 Vue.prototype.$vue = Vue;
 
-import App from './App'
+import App from './App.vue'
 import router from './router'
 
 
-import Header from './components/Header/index'
+import Header from './components/Header/index.vue'
 Vue.component('Header', Header);
 
-/*import AddressPicker from './components/AddressPicker/address-picker'
-Vue.component('cui-address-picker', AddressPicker);*/
-import AddressChild from './components/AddressPicker/address-child'
-Vue.component('cui-address-child', AddressChild);
-
-import  AttrPicker from './components/AttrPicker/index'
+import  AttrPicker from './components/AttrPicker/index.vue'
 Vue.component('cui-attr-picker',AttrPicker)
 
-import  CuiLoadmore from './components/LoadMore/loadMore'
+import AddressChild from './components/AddressPicker/address-child.vue'
+Vue.component('cui-address-child', AddressChild);
+
+import  CuiLoadmore from './components/LoadMore/loadMore.vue'
 Vue.component('cui-loadmore',CuiLoadmore)
 
 
@@ -44,11 +42,6 @@ Vue.prototype.$ces = Ces;
 
 import  SecreUtil from './components/ces/utils/secretUtil.js'
 Vue.prototype.SecreUtil = SecreUtil;
-/*
-
-import  Constants from './Constants.js'
-Vue.prototype.Constants = Constants;
-*/
 
 Ces.ready(function () {
   /* eslint-disable no-new */
