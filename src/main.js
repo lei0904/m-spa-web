@@ -14,7 +14,6 @@ Vue.prototype.$vue = Vue;
 
 import App from './App'
 import router from './router'
-import store from './store/index.js'
 
 
 import Header from './components/Header/index'
@@ -55,7 +54,6 @@ Ces.ready(function () {
   /* eslint-disable no-new */
   let app = new Vue({
     router,
-    store,
     components: { App },
     template: '<App/>',
     mounted:function () {

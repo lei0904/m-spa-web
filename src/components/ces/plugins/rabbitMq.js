@@ -43,22 +43,6 @@ let RabbitMq = (function () {
             })
           }
         })
-
-       /* if(localStorage.hasOwnProperty(msgKey)){
-               msgArr = JSON.parse(localStorage.getItem(msgKey));
-            let _tempArr=[];
-            console.log('rets.data',_tempData)
-            _tempArr.push(_tempData);
-            for(let i=0; i<msgArr.length;i++){
-              _tempArr.push(msgArr[i])
-            }
-            console.log('_tempArr',_tempArr);
-            localStorage.setItem(msgKey,JSON.stringify(_tempArr))
-        }else{
-            let _temp =[];
-              _temp.push(_tempData);
-              localStorage.setItem(msgKey,JSON.stringify(_temp));
-        }*/
     });
   };
 
